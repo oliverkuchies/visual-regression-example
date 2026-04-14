@@ -99,6 +99,11 @@ jobs:
           pattern: blob-attachments-*
           merge-multiple: true
 
+      - name: Debugs
+        run: |
+          ls -la
+          ls -la .vitest*
+
       - name: Merge reports
         run: npx vitest --merge-reports
 
