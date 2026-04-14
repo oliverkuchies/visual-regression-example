@@ -10,7 +10,7 @@
     "upload": "chromatic --vitest -t $CHROMATIC_PROJECT_TOKEN"
   },
   "devDependencies": {
-    "@chromatic-com/vitest": "0.0.1-1bad6c4-20260409122845",
+    "@chromatic-com/vitest": "0.0.1-2257d26-20260414085334",
     "@chromaui/rrweb-snapshot": "2.0.0-alpha.18-noAbsolute",
     "@rrweb/types": "2.0.0-alpha.20",
     "@types/react": "^19.1.2",
