@@ -110,10 +110,10 @@ jobs:
           cd .vitest
           tree
 
-      - name: Merge reports
-        run: npx vitest --merge-reports
-
       - name: Run Chromatic tests
         run: npx chromatic --vitest
         env:
           CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+
+      - name: Merge reports
+        run: npx vitest --merge-reports
