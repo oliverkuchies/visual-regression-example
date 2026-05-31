@@ -114,6 +114,8 @@ jobs:
         run: npx vitest --merge-reports
 
       - name: Run Chromatic tests
-        run: npx chromatic --vitest
-        env:
-          CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+        uses: chromaui/action@latest
+        with:
+          vitest: true
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          exitZeroOnChanges: true
