@@ -49,8 +49,8 @@ importers:
         version: 1.4.0
     devDependencies:
       '@chromatic-com/vitest':
-        specifier: https://pkg.pr.new/@chromatic-com/vitest@ff1d079
-        version: https://pkg.pr.new/@chromatic-com/vitest@ff1d079(@testing-library/dom@10.4.1)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vitest@4.1.8)
+        specifier: https://pkg.pr.new/@chromatic-com/vitest@c64f02d
+        version: https://pkg.pr.new/@chromatic-com/vitest@c64f02d(@testing-library/dom@10.4.1)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vitest@4.1.8)
       '@types/react':
         specifier: ^19.1.2
         version: 19.2.14
@@ -65,7 +65,7 @@ importers:
         version: 4.1.8(msw@2.13.2)(playwright@1.59.1)(vite@8.0.8(esbuild@0.27.7)(jiti@2.6.1))(vitest@4.1.8)
       chromatic:
         specifier: ^17
-        version: 17.4.1(@chromatic-com/vitest@https://pkg.pr.new/@chromatic-com/vitest@ff1d079(@testing-library/dom@10.4.1)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vitest@4.1.8))
+        version: 17.4.1(@chromatic-com/vitest@https://pkg.pr.new/@chromatic-com/vitest@c64f02d(@testing-library/dom@10.4.1)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vitest@4.1.8))
       msw:
         specifier: ^2.12.13
         version: 2.13.2
@@ -229,8 +229,8 @@ packages:
   '@blazediff/core@1.9.1':
     resolution: {integrity: sha512-ehg3jIkYKulZh+8om/O25vkvSsXXwC+skXmyA87FFx6A/45eqOkZsBltMw/TVteb0mloiGT8oGRTcjRAz66zaA==}
 
-  '@chromatic-com/vitest@https://pkg.pr.new/@chromatic-com/vitest@ff1d079':
-    resolution: {integrity: sha512-q9VYrEiFWJkRb1h4gEebVwL2ytb3k+rFl2pPdwsIXi507pIZ30Nr65+U5kO6AZVMG/YUwW5j3ZU8yPxBSMNTjQ==, tarball: https://pkg.pr.new/@chromatic-com/vitest@ff1d079}
+  '@chromatic-com/vitest@https://pkg.pr.new/@chromatic-com/vitest@c64f02d':
+    resolution: {integrity: sha512-dmd3vg2o9/KtGuKEV9LPxVAB02aPfM0iH4b9pcN5026Mut+V07r4+OSHlTKAz9ZrIuHvHIfpFupeJnVoqV3QaA==, tarball: https://pkg.pr.new/@chromatic-com/vitest@c64f02d}
     version: 0.1.3
     hasBin: true
     peerDependencies:
@@ -3501,7 +3501,7 @@ snapshots:
 
   '@blazediff/core@1.9.1': {}
 
-  '@chromatic-com/vitest@https://pkg.pr.new/@chromatic-com/vitest@ff1d079(@testing-library/dom@10.4.1)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vitest@4.1.8)':
+  '@chromatic-com/vitest@https://pkg.pr.new/@chromatic-com/vitest@c64f02d(@testing-library/dom@10.4.1)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vitest@4.1.8)':
     dependencies:
       '@chromaui/rrweb-snapshot': 2.0.0-alpha.19-noAbsolute
       '@segment/analytics-node': 2.1.3
@@ -5003,11 +5003,11 @@ snapshots:
 
   check-error@2.1.3: {}
 
-  chromatic@17.4.1(@chromatic-com/vitest@https://pkg.pr.new/@chromatic-com/vitest@ff1d079(@testing-library/dom@10.4.1)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vitest@4.1.8)):
+  chromatic@17.4.1(@chromatic-com/vitest@https://pkg.pr.new/@chromatic-com/vitest@c64f02d(@testing-library/dom@10.4.1)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vitest@4.1.8)):
     dependencies:
       semver: 7.7.4
     optionalDependencies:
-      '@chromatic-com/vitest': https://pkg.pr.new/@chromatic-com/vitest@ff1d079(@testing-library/dom@10.4.1)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vitest@4.1.8)
+      '@chromatic-com/vitest': https://pkg.pr.new/@chromatic-com/vitest@c64f02d(@testing-library/dom@10.4.1)(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(vitest@4.1.8)
 
   class-variance-authority@0.7.1:
     dependencies:
