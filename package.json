@@ -10,14 +10,12 @@
     "upload": "chromatic --vitest -t $CHROMATIC_PROJECT_TOKEN"
   },
   "devDependencies": {
-    "@chromatic-com/vitest": "0.0.1-2257d26-20260414085334",
-    "@chromaui/rrweb-snapshot": "2.0.0-alpha.18-noAbsolute",
-    "@rrweb/types": "2.0.0-alpha.20",
+    "@chromatic-com/vitest": "https://pkg.pr.new/@chromatic-com/vitest@ff1d079",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "@vitejs/plugin-react": "^6.0.1",
     "@vitest/browser-playwright": "^4.1.0",
-    "chromatic": "16.1.1--canary.1252.24180503928.0",
+    "chromatic": "^17",
     "msw": "^2.12.13",
     "playwright": "^1.52.0",
     "react": "^19.1.0",

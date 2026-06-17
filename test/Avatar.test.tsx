@@ -1,8 +1,8 @@
-import { test, expect, vi, onTestFinished } from "vitest";
+import { test, onTestFinished } from "vitest";
 import { render } from "vitest-browser-react";
 import { http, HttpResponse } from "msw";
 import { setupWorker } from "msw/browser";
-import { takeSnapshot, disableAutoSnapshot } from "@chromatic-com/vitest";
+import { takeSnapshot, configure } from "@chromatic-com/vitest";
 
 import { Avatar } from "@/components/retroui/Avatar";
 
@@ -18,7 +18,7 @@ test("default", async () => {
 });
 
 test("loading", async () => {
-  disableAutoSnapshot();
+  configure({ disableAutoSnapshot: true });
 
   const worker = setupWorker();
   onTestFinished(() => worker.stop());

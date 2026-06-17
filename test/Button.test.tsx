@@ -1,14 +1,15 @@
 import { test, expect } from "vitest";
 import { page } from "vitest/browser";
 import { render } from "vitest-browser-react";
-import { takeSnapshot, disableAutoSnapshot } from "@chromatic-com/vitest";
-
+import { takeSnapshot, configure } from "@chromatic-com/vitest";
 import { Button } from "@/components/retroui/Button";
 
 test("default", async () => {
   await render(<Button>Submit</Button>);
 
-  await expect.element(page.getByRole("button", { name: "Submit" })).toBeInTheDocument();
+  await expect
+    .element(page.getByRole("button", { name: "Submit" }))
+    .toBeInTheDocument();
 });
 
 test("hover", async () => {
@@ -18,7 +19,7 @@ test("hover", async () => {
 });
 
 test("many states", async () => {
-  disableAutoSnapshot();
+  configure({ disableAutoSnapshot: true });
 
   await render(
     <Box>
@@ -26,12 +27,13 @@ test("many states", async () => {
       <Button>Testing</Button>
     </Box>,
   );
+  await takeSnapshot("Default");
 
   await page.getByRole("button", { name: "Testing" }).hover();
-  await takeSnapshot("Hovering");
+  await takeSnapshot("Hover");
 
-  await page.getByRole("button", { name: "Testing" }).unhover();
-  await takeSnapshot("Unhover");
+  await page.getByRole("button", { name: "Testing" }).press();
+  await takeSnapshot("Press");
 });
 
 function Box({ children }: { children: React.ReactNode }) {
@@ -47,5 +49,5 @@ function Box({ children }: { children: React.ReactNode }) {
     >
       {children}
     </div>
-  )
+  );
 }

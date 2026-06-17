@@ -2,3 +2,5 @@ node_modules
 chromatic-archives
 storybook-static
 .env
+.vitest
+build-archive.log

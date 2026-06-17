@@ -2,7 +2,7 @@ import { test, expect } from "vitest";
 import { page } from "vitest/browser";
 import { render } from "vitest-browser-react";
 import {
-  disableAutoSnapshot,
+  configure,
   takeSnapshot,
   waitForIdleNetwork,
 } from "@chromatic-com/vitest";
@@ -43,7 +43,7 @@ test("open", async () => {
 });
 
 test("multiple states", async () => {
-  disableAutoSnapshot();
+  configure({ disableAutoSnapshot: true });
 
   await render(
     <Accordion header="Example header">
