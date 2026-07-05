@@ -117,5 +117,5 @@ jobs:
         uses: chromaui/action@latest
         with:
           vitest: true
-          projectToken: "XXX"
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           exitZeroOnChanges: true
